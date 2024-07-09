@@ -238,8 +238,9 @@ body {
     color: #b1b5c2;
     z-index: 1;
     background-color: var(--mainBg);
-
 }
+
+
 
 #aside .menu.close {
     transform: translateX(-250px);
@@ -481,7 +482,7 @@ body {
 
 #footer {
     padding-left: calc(220px + 20px);
-    padding-top: 80px;
+    padding-top: 40px;
     position: relative;
     transition: padding-left 0.2s ease;
     color: #8B8D91;
@@ -500,6 +501,13 @@ body {
     margin-left: 6rem;
 }
 
+@media (max-width:800px) {
+
+    #footer .footer__inner {
+        margin: 0;
+    }
+
+}
 
 #footer .footer__inner .footer__sub {
     padding-bottom: 40px;
