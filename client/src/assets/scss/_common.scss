@@ -1,0 +1,36 @@
+#main {
+    max-width: 2000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-left: calc(220px + 20px);
+    padding-top: 80px;
+    position: relative;
+    transition: padding-left 0.3s ease;
+    background-color: var(--mainBg);
+    color: var(--white);
+
+    &.menu-open {
+        padding-left: calc(220px + 20px);
+    }
+
+    &.menu-closed {
+        padding: 80px 1rem 0 0;
+    }
+}
+
+#footer {
+    padding-left: calc(220px + 20px);
+    text-align: center;
+    transition: padding-left 0.3s ease;
+    padding-top: 80px;
+    background-color: var(--mainBg);
+    color: var(--white);
+
+    &.menu-open {
+        padding-left: calc(220px + 20px);
+    }
+
+    &.menu-closed {
+        padding-left: 80px;
+    }
+}

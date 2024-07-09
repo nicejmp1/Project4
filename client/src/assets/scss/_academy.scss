@@ -1,0 +1,52 @@
+.academy__inner {
+    padding: 1rem;
+
+    .academy__list {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid var(--white);
+        border-bottom: 1px solid var(--white);
+
+    }
+
+    .academy__list__to {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--white);
+        width: 100%;
+
+        .list__title {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            width: 30%;
+
+            span {
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                color: var(--pointColor);
+            }
+        }
+
+        .list__day {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .list__field {
+            width: 10%;
+        }
+
+        .list__address {
+            width: 10%;
+        }
+    }
+}

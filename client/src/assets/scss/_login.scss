@@ -1,0 +1,68 @@
+#login {
+
+
+    h2 {
+        text-align: center;
+    }
+
+    .member__inner {
+        background: var(--white-color);
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid var(--blackColor300);
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 200px;
+    }
+
+    form {
+        fieldset {
+            border: none;
+            padding: 0;
+
+            legend {
+                font-size: 0;
+                height: 0;
+                overflow: hidden;
+                position: absolute;
+            }
+
+            div {
+                margin-bottom: 15px;
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                    font-size: 0;
+                    /* 시각적으로 숨김 */
+                }
+
+                input {
+                    width: calc(100% - 40px);
+                    padding: 10px;
+                    border: 1px solid var(--input-border-color);
+                    border-radius: 4px;
+                    margin-left: 10px;
+
+                }
+
+                .msg {
+                    display: none;
+                    /* msg 요소 숨기기 */
+                }
+            }
+
+            button {
+                width: calc(100% - 40px);
+                padding: 10px;
+                background-color: var(--primary-color);
+                color: var(--white-color);
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-left: 20px;
+            }
+        }
+    }
+}

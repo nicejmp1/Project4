@@ -1,0 +1,140 @@
+.home__inner {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    padding: 1rem;
+
+    .home__banner {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 300px;
+            border-radius: 14px;
+            object-fit: cover;
+        }
+    }
+
+    .home__title {
+        padding-top: 40px;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+
+    .home__box {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        padding: 32px 0 60px 0;
+
+        .box1,
+        .box2 {
+            flex: 1 1 0%;
+            height: 140px;
+            min-width: 200px;
+            background-color: var(--black);
+            color: var(--white);
+            flex-shrink: 0;
+            border-radius: 10px;
+            padding: 40px;
+        }
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+        }
+    }
+
+    .home__box__school {
+
+        h2 {
+            font-weight: bold;
+
+            em {
+                color: rgb(255, 55, 0);
+            }
+        }
+
+        .address__box {
+            display: flex;
+            justify-content: right;
+
+            select {
+                text-align: center;
+                border: 1px solid var(--black);
+            }
+
+            svg {
+                width: 20px;
+                height: 20px;
+                vertical-align: -6px;
+            }
+        }
+    }
+
+    .box__inner {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-auto-rows: 1fr;
+        padding-top: 30px;
+        overflow: hidden;
+        gap: 1rem;
+
+        .box {
+            outline: 1px solid var(--black);
+            min-width: 300px;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+
+            .box__banner1,
+            .box__banner2,
+            .box__banner3,
+            .box__banner4 {
+                min-width: 300px;
+                width: 100%;
+                border-radius: 10px 10px 0 0;
+                aspect-ratio: 16 / 9;
+                background: url(../img/box1.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                object-fit: cover;
+            }
+
+            .box__title {
+                padding: 1rem;
+                background-color: var(--black400);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 160px;
+                border-radius: 0 0 10px 10px;
+                color: var(--white);
+
+                span {
+                    font-size: 1.3rem;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+
+    .page__button {
+        text-align: center;
+        margin-top: 20px;
+
+
+        button {
+            cursor: pointer;
+            padding: 2px 20px;
+            border-radius: 30px;
+            background-color: var(--black);
+            color: var(--white);
+            font-size: 1.2rem;
+        }
+    }
+}
