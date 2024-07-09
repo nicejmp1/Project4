@@ -29,7 +29,7 @@
                 <input type="text" placeholder="어떤 강의를 찾고 있나요??" autocapitalize="off">
 
             </div>
-            <button>취소</button>
+            <button class="mb__cancel">취소</button>
         </div>
 
         <!-- //search -->
@@ -72,9 +72,15 @@
             <div class="main__box">
                 <div class="box1">
                     <span>비즈니스의 성공을 위한 학습을 지금 시작해보세요!</span>
+                    <a href="#">
+                        <p>비즈니스 스쿨 소개</p>
+                    </a>
                 </div>
                 <div class="box2">
                     <span>포인트를 사용할 서비스의 계정을 연결해 보세요!</span>
+                    <a href="#">
+                        <p>계정 연결 설정하기</p>
+                    </a>
                 </div>
             </div>
             <div class="box__list">
@@ -243,7 +249,7 @@
                         공지사항
                     </h2>
                 </div>
-                <div class="box__inner">
+                <div class="box__inner__notice">
                     <div class="box">
                         <div class="box__notice">
                             <div class="box__title__notice">
@@ -255,6 +261,20 @@
                             <div class="box__title__notice">
                                 <span>새롭게 바뀐 메인을 공개합니다</span>
                                 <p>2024.07.10(수)</p>
+                            </div>
+                        </div>
+
+                        <div class="box__notice">
+                            <div class="box__title__notice">
+                                <span>국리니닷컴 베타오픈</span>
+                                <p>2024.07.11(목)</p>
+                            </div>
+                        </div>
+
+                        <div class="box__notice">
+                            <div class="box__title__notice">
+                                <span>국리니닷컴 베타오픈</span>
+                                <p>2024.07.11(목)</p>
                             </div>
                         </div>
 
@@ -318,6 +338,33 @@
                     item.classList.add('active');
                 })
             })
+
+            const searchIcon = document.querySelector('.mb__search');
+            const mbSearch = document.querySelector('.m__search__box');
+            const cancelIcon = document.querySelector('.mb__cancel');
+
+            searchIcon.addEventListener('click', function () {
+                // 'block'과 'none' 상태를 토글
+                mbSearch.style.display = (mbSearch.style.display === 'none' || mbSearch.style.display === '') ? 'block' : 'none';
+            });
+
+            cancelIcon.addEventListener('click', function () {
+                // 취소 버튼 클릭 시 항상 'none'으로 설정
+                mbSearch.style.display = 'none';
+            });
+        });
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            const scrollPosition = window.scrollY || window.pageYOffset;
+
+            // 스크롤 위치에 따라 배경 투명도 조절
+            if (scrollPosition > 50) {
+                // 스크롤 위치가 50px 이상일 때 더 투명하게
+                header.style.backgroundColor = 'rgba(25, 26, 31, 90%)';
+            } else {
+                // 스크롤을 맨 위로 올렸을 때 원래 투명도로
+                header.style.backgroundColor = '#191A1F';
+            }
         });
 
     </script>
