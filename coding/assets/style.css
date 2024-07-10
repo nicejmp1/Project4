@@ -251,7 +251,7 @@ body {
     background-color: var(--mainBg);
 }
 
-#aside .menu.close {
+#aside .menu.toggle {
     transform: translateX(-220px);
 }
 
@@ -260,7 +260,7 @@ body {
         transform: translateX(-220px);
     }
 
-    #aside .menu.close {
+    #aside .menu.toggle {
         transform: translateX(0);
     }
 }
@@ -320,7 +320,7 @@ body {
     }
 }
 
-#main.close {
+#main.toggle {
     padding-top: 80px;
     padding-left: 20px;
 }
@@ -341,7 +341,7 @@ body {
         padding-top: 100px;
     }
 
-    #main.close {
+    #main.toggle {
         padding-top: 100px;
     }
 }
@@ -573,7 +573,7 @@ body {
     color: #8B8D91;
 }
 
-#footer.close {
+#footer.toggle {
     padding-left: 20px;
 }
 
