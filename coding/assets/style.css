@@ -2,6 +2,7 @@
 @import "reset.css";
 @import "vars.css";
 @import "school.css";
+@import "notice.css";
 
 body {
     background-color: var(--mainBg);
