@@ -508,7 +508,7 @@ body {
     height: 40px;
 }
 
-.box__inner__notice .box .box__notice .box__title__notice span {
+.box__inner__notice .box .box__notice .box__title__notice a {
     font-size: 1rem;
     color: var(--white);
     font-weight: 800;
