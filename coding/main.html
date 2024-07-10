@@ -50,7 +50,7 @@
                 <li><a href="#"><i class="ri-bookmark-fill"></i>내가 찜한 학원</a></li>
             </ul>
             <ul class="menu__list">
-                <li><a href="#"><i class="ri-school-fill"></i>학원목록</a></li>
+                <li><a href="school.html"><i class="ri-school-fill"></i>학원목록</a></li>
                 <li><a href="#"><i class="ri-team-fill"></i>강사 목록</a></li>
                 <li><a href="#"><i class="ri-clipboard-line"></i>국비 토크</a></li>
                 <li><a href="#"><i class="ri-book-2-fill"></i>각종 리뷰</a></li>
@@ -326,59 +326,7 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuIcon = document.querySelector('.ri-menu-line');
-            const asideMenu = document.querySelector('.menu');
-            const mainMenu = document.querySelector('main')
-            const footerMenu = document.querySelector('footer')
-
-            menuIcon.addEventListener('click', function () {
-                asideMenu.classList.toggle('toggle')
-                mainMenu.classList.toggle('toggle')
-                footerMenu.classList.toggle('toggle')
-            });
-
-            const menuActive = document.querySelectorAll('.menu li');
-
-            menuActive.forEach(item => {
-                item.addEventListener('click', function () {
-                    menuActive.forEach(el => el.classList.remove('active'));
-
-                    item.classList.add('active');
-                })
-            })
-
-            const searchIcon = document.querySelector('.mb__search');
-            const mbSearch = document.querySelector('.m__search__box');
-            const cancelIcon = document.querySelector('.mb__cancel');
-
-            searchIcon.addEventListener('click', function () {
-                // 'block'과 'none' 상태를 토글
-                mbSearch.style.display = (mbSearch.style.display === 'none' || mbSearch.style.display === '') ? 'block' : 'none';
-            });
-
-            cancelIcon.addEventListener('click', function () {
-                // 취소 버튼 클릭 시 항상 'none'으로 설정
-                mbSearch.style.display = 'none';
-            });
-        });
-        window.addEventListener('scroll', function () {
-            const header = document.getElementById('header');
-            const scrollPosition = window.scrollY || window.pageYOffset;
-
-            // 스크롤 위치에 따라 배경 투명도 조절
-            if (scrollPosition > 50) {
-                // 스크롤 위치가 50px 이상일 때 더 투명하게
-                header.style.backgroundColor = 'rgba(25, 26, 31, 90%)';
-            } else {
-                // 스크롤을 맨 위로 올렸을 때 원래 투명도로
-                header.style.backgroundColor = '#191A1F';
-            }
-        });
-
-    </script>
-
+    <script src="js/index.js"></script>
 </body>
 
 </html>

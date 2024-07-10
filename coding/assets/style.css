@@ -1,6 +1,7 @@
 @import "fonts.css";
 @import "reset.css";
 @import "vars.css";
+@import "school.css";
 
 body {
     background-color: var(--mainBg);
@@ -270,7 +271,7 @@ body {
     border-radius: 5px;
 }
 
-#aside .menu li.active {
+#aside .menu li.active a {
     background-color: #13151A;
     color: #71E5D7;
 }
